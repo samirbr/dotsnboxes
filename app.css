@@ -1,0 +1,63 @@
+.line {
+    cursor: pointer;
+    background-color: #EEEEEE;
+    border: solid 1px #EEEEEE;
+    float: left;
+}
+
+.line.vertical {
+    padding: 0 1px;
+    width: 1px;
+    height: 98px;
+}
+
+.line.horizontal {
+    padding: 1px 0;
+    width: 98px;
+    height: 1px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: black;
+    float: left;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: transparent;
+}
+
+.player1 {
+    color: #134ae1;
+}
+
+.player2 {
+    color: red;
+}
+
+.connected {
+    cursor: default;
+}
+
+.closed.player1 {
+    background: #25aae1;
+}
+
+.closed.player2 {
+    background: #ff9ca0;
+}
+
+.connected.player1 {
+    border: solid 1px #134ae1;
+    background-color: #134ae1;
+}
+
+.connected.player2 {
+    border: solid 1px red;
+    background-color: red;
+}
