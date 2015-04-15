@@ -277,8 +277,8 @@ var Board = (function ($) {
     }
     
     function init() {
-        this.draw();
-        this.addEvents();
+        draw.bind(this).call();
+        addEvents.bind(this).call();
     }
     
     function Player(name) {
@@ -294,15 +294,9 @@ var Board = (function ($) {
         $board = $(context);
     }
         
-    Board.prototype.on = on;
-    
-    Board.prototype.draw = draw;
-    
-    Board.prototype.addPlayer = addPlayer;
-    
-    Board.prototype.addEvents = addEvents;
-    
+    Board.prototype.on = on;    
+    Board.prototype.addPlayer = addPlayer;    
     Board.prototype.init = init;
     
     return Board;    
-}(jQuery));     
+}(jQuery));
