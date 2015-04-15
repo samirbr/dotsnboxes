@@ -259,7 +259,7 @@ var Board = (function ($) {
                     checkRight(lineIndex, self.width);
                 }
                 
-                var closedBoxes = $(CLOSED_CLS).size();
+                var closedBoxes = $('.' + CLOSED_CLS).size();
                 
                 if (closedBoxes < self.width * self.height) {
                     nextTurn();
